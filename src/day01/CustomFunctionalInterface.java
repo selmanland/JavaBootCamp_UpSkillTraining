@@ -16,7 +16,24 @@ public class CustomFunctionalInterface {
 
         System.out.println("------------------------------");
 
-        DataFunction<String> reverse = s ->  new StringBuilder(s).reverse().toString();
+        DataFunction<String> reverse = (s) -> {
+            String result = "";
+            for(int i = s.length()-1; i >=0; i--)
+                result += s.charAt(i);
+            return result;
+        };
+
+       String str1 =  reverse.function("Cybertek");
+        System.out.println(str1);
+
+        System.out.println("-------------------------------");
+
+        DataFunction<Integer> cube = n -> n*n*n ;
+
+        int r1 = cube.function(10);
+        System.out.println(r1);
+
+
 
 
 
