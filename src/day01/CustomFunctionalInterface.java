@@ -14,7 +14,9 @@ public class CustomFunctionalInterface {
 
         System.out.println( longestString.function("Java", "C#") );
 
+        System.out.println("------------------------------");
 
+        DataFunction<String> reverse = s ->  new StringBuilder(s).reverse().toString();
 
 
 
