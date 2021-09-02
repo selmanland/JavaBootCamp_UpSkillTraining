@@ -17,7 +17,12 @@ Up-Skill Training topics:
 						filter()
 						sorted()
 						collect()
+						skip()
+						distinct()
+						limit()
 						forEach()
 						reduce()
-						distinct()
+				
+
+
 
