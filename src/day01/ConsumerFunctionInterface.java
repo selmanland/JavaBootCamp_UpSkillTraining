@@ -54,6 +54,17 @@ public class ConsumerFunctionInterface {
 
         System.out.println("--------------------------------");
 
+        Consumer<String[]> printDescendingOrder = arr -> {
+            Arrays.sort(arr);
+            for (int i = arr.length - 1; i >= 0; i--) {
+                System.out.print(arr[i]+" ");
+            }
+            System.out.println();
+        };
+
+        //int[] array = {10, 20, 30, 5, 4, 3, 1, 2, 100, 0};
+        String[] array = {"A", "B", "C", "D"};
+        printDescendingOrder.accept(array);
 
 
 
