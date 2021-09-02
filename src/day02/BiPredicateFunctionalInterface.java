@@ -1,9 +1,11 @@
 package day02;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.BiPredicate;
-import java.util.function.Predicate;
+
 
 public class BiPredicateFunctionalInterface {
 
@@ -38,7 +40,21 @@ public class BiPredicateFunctionalInterface {
 
         System.out.println("-----------------------------------------");
 
-        BiPredicate<List<Integer>, Integer>  isDuplicated
+        BiPredicate<List<Integer>, Integer>  isDuplicated = (l, e) -> Collections.frequency(l, e) > 1;
+
+        List<Integer> list = new ArrayList<>();
+        list.addAll(Arrays.asList(1,1,1,2,3,3,3,4,5,5,5,6));
+
+        list.forEach( n -> {
+            if(!isDuplicated.test(list , n  )){
+                System.out.print(n +" ");
+            }
+        } );
+
+        System.out.println();
+
+
+
 
 
 
