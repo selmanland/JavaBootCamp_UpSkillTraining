@@ -17,9 +17,9 @@ Up-Skill Training topics:
 						filter()
 						sorted()
 						collect()
-						skip()
+						skip(5)
 						distinct()
-						limit()
+						limit(5)
 						reduce()
 						allMatch
 						anyMatch
