@@ -20,9 +20,14 @@ Up-Skill Training topics:
 						skip()
 						distinct()
 						limit()
-						forEach()
 						reduce()
-				
+						allMatch
+						anyMatch
 
+						Intermediate Operators:
+						    map
+						    filter
+						    sorted
+						    collect
 
 
